@@ -1,12 +1,11 @@
-from geo.utils import circumference, area
+import geo.utils as utils
 
-if __name__ == "__main__":
-    radius = 5.0
+# 피타고라스 정리 계산
+a, b = 3, 4
+c = utils.pythagoras(a, b)
+print('c =', c)
 
-    # 원의 둘레와 넓이 계산
-    c = circumference(radius)
-    a = area(radius)
-
-    # 출력 형식에 맞게 출력
-    print("c =", c)
-    print("area =", a) 
+# 원의 넓이 계산
+r = 10
+area = utils.circle(r)
+print('area =', area)
